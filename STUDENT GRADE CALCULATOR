@@ -1,0 +1,124 @@
+package SGC;
+import java.util.Scanner;
+
+public class ClassA 
+{
+	public void meth1()
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter Student name");
+		String name=sc.nextLine();
+		
+		System.out.println("Enter Student Roll Number");
+		int rollNumber = sc.nextInt();
+		
+		System.out.println("Enter Student Subject Marks (out of 100)");
+		
+		System.out.print("English :");
+		int eng=sc.nextInt();
+		
+		System.out.print("Math :");
+		int math=sc.nextInt();
+		
+		System.out.print("Physics :");
+		int phy=sc.nextInt();
+		
+		System.out.print("Chemistry :");
+		int chem=sc.nextInt();
+		
+		System.out.print("Social Science :");
+		int ss=sc.nextInt();
+		
+		int total=(eng+math+phy+chem+ss);
+		
+		double Percentage=total/5;
+		
+		
+		System.out.println(Percentage);
+		
+		System.out.println("===============================================================");
+
+		if(Percentage>90)
+		{
+			
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : A+");
+		}
+		else if(Percentage>80)
+		{
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : A");
+			
+		}
+		else if(Percentage>75)
+		{
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : B+");
+			
+		}
+		else if(Percentage>70)
+		{
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : B");
+			
+		}
+		else if(Percentage>60)
+		{
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : C+");
+			
+		}
+		else if(Percentage>50)
+		{
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : C");
+			
+		}
+		else if(Percentage>40)
+		{
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : D+");
+			
+		}
+		else if(Percentage>35)
+		{
+			System.out.println("Congratulation "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+			System.out.println("Grad : D");
+			
+		}
+		else
+		{
+			System.out.println("Sorry you are fail "+name);
+			System.out.println("Total Marks:"+total);
+			System.out.println("Percentage:"+Percentage);
+		}
+		
+		System.out.println("===============================================================");
+		sc.close();
+		
+	}
+
+	public static void main(String []args)
+	{
+		ClassA aobj=new ClassA();
+		aobj.meth1();
+		
+	}
+}
